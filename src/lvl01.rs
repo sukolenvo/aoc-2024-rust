@@ -1,8 +1,9 @@
 use std::collections::HashMap;
 use std::fs;
+use crate::common::read_task;
 
 pub fn lvl01() {
-    let task = read_task();
+    let task = read_task(1);
     let mut col1 = Vec::new();
     let mut col2 = Vec::new();
 
@@ -22,7 +23,7 @@ pub fn lvl01() {
 }
 
 pub fn lvl01_second() {
-    let task = read_task();
+    let task = read_task(1);
     let mut keys = Vec::new();
     let mut frequencies = HashMap::new();
 
@@ -39,7 +40,3 @@ pub fn lvl01_second() {
     println!("Result: {}", result);
 }
 
-pub fn read_task() -> String {
-    fs::read_to_string("tasks/lvl01.txt")
-        .expect("input task is missing")
-}
