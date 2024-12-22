@@ -53,3 +53,18 @@ pub fn lvl02_second() {
     }
     println!("Safe reports: {}", safe_reports);
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_lvl02() {
+        lvl02();
+    }
+
+    #[test]
+    fn test_lvl02_second() {
+        lvl02_second();
+    }
+}

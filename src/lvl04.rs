@@ -117,3 +117,18 @@ fn count_x_mas(lines: &Vec<&str>, i: usize, j: usize) -> i32 {
     }
     0
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_lvl04() {
+        lvl04();
+    }
+
+    #[test]
+    fn test_lvl04_second() {
+        lvl04_second();
+    }
+}

@@ -18,3 +18,13 @@ pub fn lvl03() {
     }
     println!("Result: {}", result);
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_lvl03() {
+        lvl03();
+    }
+}

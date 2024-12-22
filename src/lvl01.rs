@@ -1,5 +1,4 @@
 use std::collections::HashMap;
-use std::fs;
 use crate::common::read_task;
 
 pub fn lvl01() {
@@ -40,3 +39,17 @@ pub fn lvl01_second() {
     println!("Result: {}", result);
 }
 
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_lvl01() {
+        lvl01();
+    }
+
+    #[test]
+    fn test_lvl01_second() {
+        lvl01_second();
+    }
+}
