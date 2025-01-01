@@ -23,3 +23,4 @@ mod lvl21;
 mod lvl22;
 mod lvl23;
 mod lvl24;
+mod lvl25;
